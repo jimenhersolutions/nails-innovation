@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynn's Nails - Elegance and Style</title>
+    <!-- Carga de Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Swiper CSS (para el carrusel) --><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Estilos personalizados para el carrusel de Swiper */
+        .swiper-button-next, .swiper-button-prev {
+            color: white; /* Flechas de navegación blancas */
+        }
+        .swiper-pagination-bullet-active {
+            background-color: white; /* Puntos de paginación blancos */
+        }
+        /* Importante para el efecto 'fade' */
+        .swiper-fade .swiper-slide {
+            transition-duration: 600ms; /* Controla la velocidad de la transición */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+    <!-- Carrusel de Imágenes (Swiper.js) --><div class="swiper mySwiper h-screen w-full relative">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 (Se mantiene) --><div class="swiper-slide">
+                <img src="https://i.imgur.com/3Gfo6p8.jpeg" alt="Hands with elegant nail design" class="w-full h-full object-cover">
+            </div>
+            <!-- Slide 2 (Actualizada) --><div class="swiper-slide">
+                <img src="https://i.imgur.com/f9QrOiC.jpeg" alt="Hands and pink nail polish" class="w-full h-full object-cover">
+            </div>
+            <!-- Slide 3 (Actualizada) --><div class="swiper-slide">
+                <img src="https://i.imgur.com/Z7GEi1l.jpeg" alt="Bottles of spa oils and creams" class="w-full h-full object-cover">
+            </div>
+            <!-- Slide 4 (Actualizada) --><div class="swiper-slide">
+                <img src="https://i.imgur.com/JsM09Y1.jpeg" alt="Nail care and manicure kit" class="w-full h-full object-cover">
+            </div>
+            <!-- Slide 5 (Actualizada) --><div class="swiper-slide">
+                <img src="https://i.imgur.com/KoQR0OD.jpeg" alt="Foot spa session" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <!-- Paginación --><div class="swiper-pagination"></div>
+        <!-- Botones de Navegación --><div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Sección de Bienvenida y Mensaje Promocional (manteniendo el fondo rosa pastel) --><section class="py-16 md:py-24 bg-pink-100 shadow-xl">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-5xl font-extrabold text-pink-700 mb-6">
+                Nails Innovation: Elegance Starts at Your Fingertips
+            </h2>
+            <p class="text-gray-800 text-xl leading-relaxed mb-8">
+                At Nails innovation, every visit is a luxury experience. We are dedicated to creating nails that are not just beautiful, but true works of art that reflect your personal style. Our commitment is to **impeccable elegance** and **unsurpassed quality**, ensuring you leave feeling fabulous with perfectly cared-for hands.
+            </p>
+            <p class="text-gray-600 text-lg italic">
+                Discover why we are the salon of choice for those seeking the best in style and durability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Secciones de Servicios con Imágenes y Botones --><section class="py-0 bg-white">
+        <div class="w-full relative">
+            <div class="flex justify-center">
+                <img 
+                    src="https://i.imgur.com/VkbeHIN.jpeg" 
+                    alt="Elegant nail design with pastel pink and white accents."
+                    class="w-full h-auto object-cover transition duration-300"
+                    onerror="this.onerror=null; this.src='https://placehold.co/1200x675/ffe4e6/333333?text=Image+Not+Available'"
+                >
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <button class="bg-transparent border-2 border-white text-white text-xl md:text-2xl font-semibold px-8 py-4 rounded-full 
+                                 hover:bg-pink-600 hover:border-pink-600 transition-all duration-300 shadow-lg backdrop-blur-sm">
+                    Nail Spa
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-0 bg-white">
+        <div class="w-full relative"> 
+            <div class="flex justify-center">
+                <img 
+                    src="https://i.imgur.com/uMrkTcF.jpeg" 
+                    alt="Image of feet in an elegant, relaxing spa."
+                    class="w-full h-auto object-cover transition duration-300"
+                    onerror="this.onerror=null; this.src='https://placehold.co/1200x675/ffe4e6/333333?text=Image+Not+Available'"
+                >
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <button class="bg-transparent border-2 border-white text-white text-xl md:text-2xl font-semibold px-8 py-4 rounded-full 
+                                 hover:bg-pink-600 hover:border-pink-600 transition-all duration-300 shadow-lg backdrop-blur-sm">
+                    Foot Spa
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-0 bg-white">
+        <div class="w-full relative"> 
+            <div class="flex justify-center">
+                <img 
+                    src="https://i.imgur.com/HhVc8Sr.jpeg" 
+                    alt="Image of waxing, elegant and clean."
+                    class="w-full h-auto object-cover transition duration-300"
+                    onerror="this.onerror=null; this.src='https://placehold.co/1200x675/ffe4e6/333333?text=Image+Not+Available'"
+                >
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <button class="bg-transparent border-2 border-white text-white text-xl md:text-2xl font-semibold px-8 py-4 rounded-full 
+                                 hover:bg-pink-600 hover:border-pink-600 transition-all duration-300 shadow-lg backdrop-blur-sm">
+                    Waxing
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección de Experiencia/Cierre -->
+    <section class="py-12 md:py-16 bg-pink-100">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+            <h3 class="text-4xl font-bold text-pink-700 mb-4">
+                The Nails Innovation Experience
+            </h3>
+            <p class="text-gray-800 text-lg leading-relaxed">
+                Step into a world of serene elegance where every detail is crafted for your comfort and satisfaction. Our commitment to using the highest quality products and providing exceptional service ensures that your visit is not just an appointment, but a moment of true, luxurious indulgence.
+            </p>
+            <p class="text-gray-600 text-base mt-4 italic">
+                Experience the difference that impeccable care makes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pie de Página --><footer class="text-center py-6 text-sm text-gray-700 border-t border-pink-300 bg-pink-100">
+        <p>&copy; 2025 Nails Innovation. Nail Care with Style.</p>
+    </footer>
+
+    <!-- Carga de Swiper JS (al final del body para un mejor rendimiento) --><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000, // CAMBIO: Ahora cambia cada 4 segundos
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            effect: "fade", // CAMBIO: Nuevo efecto elegante de desvanecimiento
+            fadeEffect: {
+                crossFade: true,
+            },
+        });
+    </script>
+
+</body>
+</html>
